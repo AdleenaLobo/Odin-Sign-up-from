@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(font/RobotoCondensed-Regular.ttf);
+}
+
+body , html
+{
+    
+    padding:0%;
+    margin:0%;
+    height:100%;
+}
+
+img
+{
+    max-width: 50%;
+    height:100%;
+}
+.outer_bod
+{
+    display:flex;
+    overflow-wrap: normal;
+}
+
+.outer_bod .form_side
+{
+    display: flex;
+    align-items: center;
+    margin-left:2%;
+    font-family: Roboto;
+}
+.form_side .inner_form_box .upper_para
+{
+    font-weight: 1000;
+    font-size: 1.5rem;
+    margin-right:5%;
+}
+
+.form_side .inner_form_box
+{
+    border:3px solid bisque;
+    
+}
+
