@@ -26,19 +26,83 @@ img
 {
     display: flex;
     align-items: center;
-    margin-left:2%;
+    margin-left:0;
     font-family: Roboto;
+    background-color: rgb(247, 232, 214);
 }
+.outer_bod .form_side .inner_form_box
+{
+    margin-left:15px;
+}
+
 .form_side .inner_form_box .upper_para
 {
-    font-weight: 1000;
-    font-size: 1.5rem;
+    font-weight: 600;
+    font-size: 20px;
     margin-right:5%;
 }
 
-.form_side .inner_form_box
+h3
 {
-    border:3px solid bisque;
-    
+    margin-left:5px;
+}
+
+.form_side .inner_form_box .second_para
+{
+    margin-top: 1rem;
+    margin-bottom:1rem;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.without_button
+{
+    height:15em;
+    background-color: aliceblue;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+.personal_details, .secondary_details , .passwords
+{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.personal_details #f_name , .personal_details #l_name ,.secondary_details #email, .secondary_details #phoneno ,.passwords #pass , .passwords #confirmpass
+{
+    display:flex;
+    flex-direction: column;
+    font-size: small;
+}
+
+.button
+{
+margin-top: 1rem;
+margin-left: 1rem;
+}
+
+button
+{
+    background-color: aliceblue;
+    border:1px solid white;
+    border-radius: 0.5rem;
+    width:150px;
+    height:30px;
+    cursor:pointer;
+}
+
+.last_para
+{
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+}
+
+input[type="password"]:invalid
+{
+ border:1px solid red;
+ border-radius: 2px;
 }
 
