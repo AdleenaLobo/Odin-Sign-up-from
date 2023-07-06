@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'Roboto';
     src: url(font/RobotoCondensed-Regular.ttf);
+    font-family: 'Odin';
+    src: url(font/Norse-Bold.otf);
 }
 
 body , html
@@ -11,15 +13,35 @@ body , html
     height:100%;
 }
 
-img
+.img1
 {
     max-width: 50%;
     height:100%;
 }
+
+.img2
+{
+    position:absolute;
+    height:15vw;
+}
+
+.inside_img
+{
+    border:1px solid white;
+    position:absolute;
+    font-size:2rem;
+    color:white;
+    font-family: Odin;
+    left:8rem;
+    top:4rem;
+}
+
+
 .outer_bod
 {
     display:flex;
     overflow-wrap: normal;
+    position:relative;
 }
 
 .outer_bod .form_side
@@ -70,12 +92,14 @@ h3
     justify-content:space-evenly;
 }
 
-.personal_details #f_name , .personal_details #l_name ,.secondary_details #email, .secondary_details #phoneno ,.passwords #pass , .passwords #confirmpass
+.personal_details #f_name , .personal_details #l_name ,.secondary_details #email, .secondary_details #phoneno ,.passwords #pass,.passwords #pass:valid , .passwords #confirmpass
 {
     display:flex;
     flex-direction: column;
     font-size: small;
+    
 }
+
 
 .button
 {
@@ -99,10 +123,31 @@ button
     margin-left: 1rem;
 
 }
-
 input[type="password"]:invalid
 {
- border:1px solid red;
- border-radius: 2px;
+
+    border:1px solid red;
+    border-radius: 2px;
+}
+
+input[type="password"]:invalid +.generated::after
+{
+ content: "*password do not match";
+ color:red;
+ font-size:small;
+
+}
+
+input[type="password"]:valid
+{
+
+    border:1px solid black;
+    border-radius: 2px;
+}
+
+input[type="password"]:valid + .generated::before
+{
+ content: " ";
+
 }
 
